@@ -88,7 +88,7 @@ this is end
 /* 
 syntax:
 
-for (e in object){
+for (variable in object){
     code to be run
 }
 
