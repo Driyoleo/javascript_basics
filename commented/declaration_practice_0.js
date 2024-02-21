@@ -93,6 +93,22 @@ var v1 , v2 , v3 , v4 = (1,2,3,4);
 
 //     why only the last variable is assigned with 44 ?
 
+/*
+
+In some programming languages (including c++ and js), the comma operator stands for "Evaluate all the expressions separated by commas and return the last one". For example:
+
+var x = (true, false, 1);
+console.log(x) // 1
+
+ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_operator
+
+Use destructing to do what you expected:
+
+*/
+
+const [a, b, c, d] = [1, 2, 3, 4];
+// a = 1, b = 2, c = 3, d = 4
+
 
 // also :
 
@@ -105,6 +121,34 @@ var p1 , p2 , p3 = "abc";
 
 //     why... ?
 
+/*
+
+Your statement, written the long hand way evaluates to:
+
+var p1;
+var p2;
+var p3 = "abc";
+
+You could write as below:
+
+*/
+
+var p1 = "abc", p2 = "abc", p3 = "abc";
+// or
+var p1 = p2 = p3 = "abc";
+
+
+/**
+
+One more note about const, when using literal variables i.e. string/integer, they cannot be changed, but when using objects such as array or object then the contents an below
+
+**/
+
+const arr = [];
+const obj = {};
+
+arr[0] = "This is valid";
+obj["key"] = "This is also valid";
 
 
 
