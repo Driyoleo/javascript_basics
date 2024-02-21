@@ -40,7 +40,7 @@ var a = 24;
 //synatax:
 
 let a = 1;
-let c = 1 , b = 2;
+let e = 1 , b = 2;
 
 // let define variables at local scope :
 

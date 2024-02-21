@@ -93,7 +93,7 @@ it is only applicable for iterable objects like arrays , strings etc otherwise i
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var
-let name = "driyo"; // colon, include let, as it defaults to var 
+name = "driyo"; // colon, include let, as it defaults to var 
 for (e of name){
     console.log(e);
 }

@@ -66,7 +66,7 @@ i.e. for (a = 10 ; a < 5 ; a++) // will run 0 times because the statement is eva
 
 */
 
-let a = 0;
+a = 0;
 for (console.log("this is start"); console.log("this is end"); a++){
     console.log("this is will not be printed");
 }
