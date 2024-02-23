@@ -64,9 +64,34 @@ number of characters in string = 7                       // here instead of 8 we
 6------>t
 
 */
+
+/*
+
+Comments :D
+
+*/
+
+// If you want the escape character in the string you have to escape it also like below
+
+str = "\\\\\\\somestring";
+console.log(str); // value is \\\somestring
  
+// So the only comment I would have regarding strings is that when working directly with HTML, it is better to use single quotes or template literals.
+// HTML uses "" so using them in javascript to build HTML strings can become cumbersome as you have to escape every " in the HTML if using double quotes for the string itself.
 
+// Also strings are objects in javascript (everything is an object) which means we can access methods on the string such as below
 
+"chess".charAt(1); // gives value "h"
+"chess"[2]; // gives value "e"
+"chess".toUpperCase(); // gives value "CHESS"
+"chess".toUpperCase(); // gives value "CHESS"
+"chess".split(''); // gives value "['c','h','e','s','s']"
+"chess".split('')[3].toUpperCase(); // gives value "S"
 
+// One more thing there are primitive strings, and object strings
+const str = "che"; // literal value which has access to object methods
+const obj = new String("che"); // object value which is different to above
 
+console.log(str === obj); // false even though the strings are the same
 
+// We can go into these more later but best to just take note of primitive values vs instantiated objects 
