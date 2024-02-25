@@ -16,6 +16,10 @@ console.log(typeof garrage);                                // output : object
 
 console.log(garrage[0]);                                    // output : supra
 
+// note : if the index is empty then it returns undefined :
+
+console.log(garrage[13]);                                   // output : undefined 
+
 
 // changing or adding value : 
 
