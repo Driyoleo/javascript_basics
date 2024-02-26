@@ -9,7 +9,7 @@ const garrage = ['supra' , 'nissan GTR' , 'jaguar'];         // here garrage is 
 
 // note :
 
-console.log(typeof garrage);                                // output : object
+console.log(typeof garrage);                                // output : object - everything is an object :)
 
 
 // accessing elements :       we can access elements through the indexes just like string.
@@ -32,4 +32,11 @@ console.log(garrage);                                      // output : [ 'BMW M8
 garrage[100] = 'pagani';
 console.log(garrage);                                      // output :  [ 'BMW M8', 'nissan GTR', 'jaguar', <97 empty items>, 'pagani' ]
 
+// This looks great - arrays also have methods on them
+
+garrage.push('honda civic'); // Pushes onto the end of the array
+// Other methods
+[].splice(1, 0) // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+// Lots more methods - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
