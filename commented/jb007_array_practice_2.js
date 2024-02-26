@@ -110,8 +110,60 @@ console.log(arr);                                           // output : [ 1, 2, 
 /************************************************************************************************************************************/
 
 
-// more to be added and suggestions are invited .....
+// 8> .concat() :          it is used to add two array together and return a new array
 
+// syntax :
+
+var arr1 = [1,2,3];
+var arr2 = [4,5,6];
+console.log(arr1.concat(arr2));                         // output : [ 1, 2, 3, 4, 5, 6 ]
+
+
+// note :           '+' and .concat() is different in some cases 
+
+var arr = [1,2,3];
+var str = 'abc';
+console.log(arr.concat(str));                           // output : [ 1, 2, 3, 'abc' ]          // it's gives a new arrar
+console.log(arr + str);                                 // output : 1,2,3abc                    // it's gives a string 
+
+
+/************************************************************************************************************************************/
+
+
+// 9> .sort() :                helps to sort array and it's modify the original array itself
+
+// Syntax :
+
+var arr = [3,2,4,1];
+console.log(arr.sort());                                // output : [ 1, 2, 3, 4 ]
+console.log(arr);                                       // output : [ 1, 2, 3, 4 ]
+
+
+/************************************************************************************************************************************/
+
+
+// 10> .splice() :               it helps to add multiple value in a arrar at a particular index in place of any multiple Element//
+
+
+// syntax :
+
+// .splice(<position> , <number of elements to be replaced> ,<elements which should be added>)
+
+var arr = [1,2,3];
+console.log(arr.splice(0,2,0,1));                       // output : [ 1, 2 ]    returns the removed elements from the array
+console.log(arr);                                       // output : [ 0, 1, 3 ]
+
+
+/************************************************************************************************************************************/
+
+
+// 11> .reverse() :                it hepls to reverse the array 
+
+// syntax :
+
+var arr = [1,2,3];
+console.log(arr.reverse());                             // output : [ 3, 2, 1 ]
+console.log(arr);                                       // output : [ 3, 2, 1 ]         it change the original array
 
 
 
