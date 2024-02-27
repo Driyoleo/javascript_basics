@@ -6,8 +6,8 @@
 // syntax :
 
 var num = [1, 2, 3, 4, 5];
-num.forEach((Element, index, arr) => {
-    console.log(Element, index, arr)
+num.forEach((element, index, arr) => { // no capitalisation for variables
+    console.log(element, index, arr)
 })
 
 //here for each loop the element is assigned to first variable and index assigned to second variable and whole array is assigned to third variable
@@ -52,6 +52,8 @@ var num2 = num1.filter((e)=>{
     else{
         return false;
     }
+    // This is a simpler way of the above
+//    return e > 2;
 });
 console.log(num2);                                          // output : [ 3, 4, 5 ]
 
@@ -69,6 +71,54 @@ var num2 = num1.reduce((a,b)=>{                             // ***********### pl
     return a+b;
 });
 console.log(num2);                                          // output : 15
+
+// we can do some debugging to find out what is going on
+var num1 = [10,20,30,40,50];
+var num2 = num1.reduce((accumulator,value)=>{
+    console.log(accumulator, value);
+    return accumulator+value;
+});
+
+//10 20
+//30 30
+//60 40
+//100 50
+
+// we can also set an accumulator initial value
+var num1 = [10,20,30,40,50];
+var num2 = num1.reduce((accumulator,value)=>{
+    console.log(accumulator, value);
+    return accumulator+value;
+}, 100);
+
+//100 10
+//110 20
+//130 30
+//160 40
+//200 50
+
+/*
+By seeing what happens when the accumulator is not set we can see the reducer function ran one less time (it has 4 rows of output vs 5)
+Therefore, we can deduce that:
+
+- if no accumulator is set, then set the accumulator to the 0th index of the array, and then iterate from the second index
+-- the accumulator value for the next loop is what is returned from the previous function call
+-- output below with notes
+
+// 10 20 - accumuator set from num1[0], value is num1[2] we return (num1[0] + num1[1] = 30
+// 30 30 - accumulator set from last return 30 - value = num1[2] - we return 30 + 30 = 60
+// 60 40 - etc
+// 100 50 - etc
+
+- if an initial accumulator value is given, start looping at the 0th index
+-- the accumulator value for the next loop is what is returned from the previous function call
+
+//100 10 - accumuator set from initial 100, value is num1[0] we return (100 + num1[0] = 110
+//110 20 - etc
+//130 30 - etc
+//160 40 - etc
+//200 50 - etc
+/*
 
 
 /*****************************************************************************************************************************************/
