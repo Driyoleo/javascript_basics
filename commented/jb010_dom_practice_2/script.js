@@ -2,7 +2,7 @@
 
 // syntax :
 
-console.log(document.body.childNodes)
+console.log(document.body.childNodes);
 // output :
 // NodeList(4) [text, div.container, text, script]
 
@@ -16,7 +16,7 @@ console.log(document.body.childNodes)
 
 // syntax :
 
-console.log(document.body.firstChild)
+console.log(document.body.firstChild);
 
 // output :
 // #text
@@ -26,7 +26,7 @@ console.log(document.body.firstChild)
 
 // syntax :
 
-console.log(document.body.firstElementChild)
+console.log(document.body.firstElementChild);
 
 // output :
 // <div class="container">
@@ -36,7 +36,7 @@ console.log(document.body.firstElementChild)
 
 // syntax :
 
-console.log(document.body.firstElementChild.lastElementChild)
+console.log(document.body.firstElementChild.lastElementChild);
 
 // output :
 // <div class="box">
@@ -46,7 +46,7 @@ console.log(document.body.firstElementChild.lastElementChild)
 
 // syntax :
 
-console.log(document.body.firstElementChild.firstElementChild.nextElementSibling)
+console.log(document.body.firstElementChild.firstElementChild.nextElementSibling);
 
 // output :
 // <div class="box">
@@ -56,7 +56,7 @@ console.log(document.body.firstElementChild.firstElementChild.nextElementSibling
 
 // syntax :
 
-console.log(document.body.firstElementChild.firstElementChild.previousElementSibling)
+console.log(document.body.firstElementChild.firstElementChild.previousElementSibling);
 
 // output :
 // null
@@ -66,7 +66,7 @@ console.log(document.body.firstElementChild.firstElementChild.previousElementSib
 
 // syntax :
 
-console.log(document.body.firstElementChild.firstElementChild.parentElement)
+console.log(document.body.firstElementChild.firstElementChild.parentElement);
 
 // output :
 // <div class="container">
