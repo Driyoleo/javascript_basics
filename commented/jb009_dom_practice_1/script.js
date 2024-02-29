@@ -12,7 +12,23 @@ alert('hi welcome to my first website');
 // syntax :
 
 var name = prompt('what is your name ?','username');            // username is the default value if nothing is typed in
-console.log(name)
+console.log(name); // Terminate with colon!!! Always do this, it will catch you out if you are not careful
+
+// An example of a gotcha with leaving out semi colons
+const a = 1
+const b = 2
+(a+b).toString()
+ // The above results in an error of :: Uncaught ReferenceError: b is not defined.
+
+// As it compiles to without using semi colons
+const a = 1;
+const b = 2(a+b).toString();
+
+// Using semi colons eradicates this and the code works as expected
+const a = 1;
+const b = 2;
+(a+b).toString();
+
 
 // 3> confirm() :   used to take user reply as true or false 
 
@@ -27,6 +43,7 @@ else{                                                           // on basis of a
 }
 console.log(age);                                               // that value will be printed in the console of the browser                                               
 
-
+// can be simplified to the below
+console.log((age ? 'above' : 'below') + ' 18'); // This is called ternary operator
 
 // note all this can be run only on browser through html cause these methods are only available on browser 
