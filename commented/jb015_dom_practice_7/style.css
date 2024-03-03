@@ -1,0 +1,23 @@
+div.box{
+    padding: 10px;
+    height: 30px;
+    width: 78px;
+    border: 4px solid black;
+    margin: 20px;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.purple{
+    background-color: purple;
+}
